@@ -9,7 +9,13 @@ public:
 
     int getAge();
 
+    void setName(std::string);
+
+    void setAge(int age);
+
+    void showInfo();
+
 private:
-    std::string name;
-    int age;
+    std::string _name;
+    int _age;
 };

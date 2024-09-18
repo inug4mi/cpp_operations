@@ -23,7 +23,9 @@ int main(){
     std::cout << "Square root of " << z << " is " << operations.mySqrt(z) << std::endl;
     
     Person person1 = Person("Alex", 33);
-    std::cout << "Name: " << person1.getName() << "\nAge: " << person1.getAge() << std::endl; 
-
+    std::cout << "Name: " << person1.getName() << ", Age: " << person1.getAge() << std::endl; 
+    person1.setName("Alexander");
+    person1.setAge(operations.mySum(person1.getAge(),1));
+    person1.showInfo();
     return 0;
 }
