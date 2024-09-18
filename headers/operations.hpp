@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-#include <iostream>
 #include <cmath>
 
 #define PI 3.141592

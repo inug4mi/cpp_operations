@@ -1,5 +1,6 @@
 #include <iostream>
-#include "operations.hpp"
+#include "headers/operations.hpp"
+#include "headers/person.hpp"
 
 const int a = 4;
 const float b = 4.5;
@@ -20,5 +21,9 @@ int main(){
     std::cout << operations.publicGreet << std::endl;
     std::cout << operations.callPrivateGreet() << std::endl;
     std::cout << "Square root of " << z << " is " << operations.mySqrt(z) << std::endl;
+    
+    Person person1 = Person("Alex", 33);
+    std::cout << "Name: " << person1.getName() << "\nAge: " << person1.getAge() << std::endl; 
+
     return 0;
 }
